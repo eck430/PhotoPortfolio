@@ -1,6 +1,68 @@
 /* CSS Reset */
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    padding-top: 44px;
+    padding-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 104px;
+}
+
+#name{
+    text-align: center;
+    padding-bottom: 14px;
+    font-family: 'Petit Formal Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  #insta{
+    width: 17px;
+    height: 17px;
+  }
+
+  .albums{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  #img{
+    /*placeholder fo image*/
+    background-color: #f0f0f0;
+    padding: 50px;
+    border: 2px solid black;
+    gap: 20px; /* adds gap between image and txt */
+    margin: 10px;
+    width: 350px;
+    height: 350px;
+  }
+
+  footer{
+    border-style: solid;
+     height: 100px;
+  }
+
+
