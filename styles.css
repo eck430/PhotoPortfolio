@@ -19,7 +19,7 @@ header{
     padding-bottom: 14px;
     font-family: 'Petit Formal Script';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 32px;
     line-height: 40px;
   }
@@ -29,9 +29,9 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 17px;
     font-family: 'Inter';
-    font-style: normal;
+    font-style: light;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -53,7 +53,6 @@ header{
     /*placeholder fo image*/
     background-color: #f0f0f0;
     padding: 50px;
-    border: 2px solid black;
     gap: 20px; /* adds gap between image and txt */
     margin: 10px;
     width: 350px;
@@ -61,8 +60,55 @@ header{
   }
 
   footer{
-    border-style: solid;
-     height: 100px;
+    padding: 25px;
+    background-color: #f0f0f0;
+    height: 75px;
   }
 
+/* tablets and larger */
+@media (min-width: 768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
 
+    #name{
+        font-size: 40px;
+    }
+
+    nav{
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    #insta{
+        width: 20px;
+        height: 20px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    #img{
+        width: 300px;
+        height: 300px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #img{
+        width: 400px;
+        height: 400px;
+    }
+}
