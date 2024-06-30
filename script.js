@@ -9,11 +9,20 @@ document.addEventListener('DOMContentLoaded', function(){     //event listener w
 });
 
 function loadAlbum(alb){
-    const albContent = document.getElementById('albContent');    // get <main> where imgs will be displayed
+    // get <main> where imgs will be displayed
+    const albContent = document.getElementById('albContent');    
 
-    // album array with imgs
+    // create obj to map albums to images
+    const albums = {    
+        'album1': [''],
+        'album2': [''],
+        'album3': ['']
+    };
 
     // check if user selected album exists
+    if(albums){
+
+    }
 
     // get imgs from album (select arr)
 
