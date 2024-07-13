@@ -14,6 +14,10 @@ a:hover{
     transform: scale(1.25);
 }
 
+.albums:hover{
+  transform: scale(0.85);
+}
+
 header{
     padding-top: 44px;
     padding-bottom: 44px;
@@ -52,6 +56,12 @@ header{
   #insta{
     width: 17px;
     height: 17px;
+  }
+
+  hr{
+    margin: 10px 0px 20px;
+    height: 2px;
+    background-color: black;
   }
 
   .albums{
@@ -168,6 +178,7 @@ header{
     .contact{
         flex-direction: row;
         width: 96%;
+        padding-top: -5px;
     }
 
     #contactForm{
@@ -176,6 +187,7 @@ header{
 
     #contactTxt{
         padding-right: 50px;
+        font-size: 70px;
     }
 
 }
@@ -188,6 +200,10 @@ header{
     main{
         padding-top: 15px;
         padding-bottom: 20px;
+    }
+    #contactTxt{
+      padding-right: 60px;
+      font-size: 75px;
     }
     footer{
         padding: 30px;

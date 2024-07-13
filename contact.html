@@ -19,7 +19,7 @@
             <a href="https://www.instagram.com/archives.june/"><img src="imgs/insta.webp" alt="Insta Logo" id="insta"></a>
         </nav>
     </header>
-
+    <hr>
     <main>
         <div class="contact">
             <h1 id="contactTxt">Contact</h1>
@@ -56,6 +56,14 @@
             <a href="https://www.instagram.com/archives.june/"><img src="imgs/insta.webp" alt="Insta Logo" id="insta"></a>
         </nav>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            alert('Thank you for your message! Please note that this is a demonstration project, and your message has not been sent.')
+        });
+    </script>
 
 </body>
 </html>
