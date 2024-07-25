@@ -14,9 +14,9 @@ function loadAlbum(alb){
 
     // create obj to map albums to images
     const albums = {
-        'album1': [''],
-        'album2': [''],
-        'album3': ['']
+        'church': ['imgs/church1.jpg', 'imgs/church2.jpg'],
+        'family': ['imgs/family1.jpg'],
+        'couple': ['imgs/couple1.jpg']
     };
 
     // check if user selected album exists (if objs key = query key 'alb')
