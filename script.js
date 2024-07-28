@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){     //event listener w
     const albParam = new URLSearchParams(window.location.search).get('alb');     // get key alb value from query param
 
     if(albParam){
-        loadAlbum(alb);
+        loadAlbum(albParam);
     }
 });
 
@@ -14,9 +14,9 @@ function loadAlbum(alb){
 
     // create obj to map albums to images
     const albums = {
-        'church': ['imgs/church1.jpg', 'imgs/church2.jpg'],
-        'family': ['imgs/family1.jpg'],
-        'couple': ['imgs/couple1.jpg']
+        'church': ['imgs/church1.jpg', 'imgs/church2.jpg', 'imgs/church3.jpg', 'imgs/church4.jpg'],
+        'family': ['imgs/family1.jpg', 'imgs/family2.jpg', 'imgs/family3.jpg', 'imgs/family4.jpg'],
+        'couple': ['imgs/couple1.jpg', 'imgs/couple2.jpg', 'imgs/couple3.jpg', 'imgs/couple4.jpg', 'imgs/couple5.jpg']
     };
 
     // check if user selected album exists (if objs key = query key 'alb')
