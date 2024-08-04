@@ -1,3 +1,9 @@
+document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('hamburger').classList.toggle('active');
+    document.getElementById('nav_list').classList.toggle('active');
+    document.querySelector('body').classList.toggle('active');
+});
+
 // dynamically load images based on selected album
 
 document.addEventListener('DOMContentLoaded', function(){     //event listener wait for doc to be fully loaded and parsed before executing

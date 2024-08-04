@@ -4,43 +4,80 @@
     box-sizing: border-box;
     font-family: 'Bellefair', serif;
     font-weight: 400;
+    color: black;
+}
+
+/* nav bar*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 40px 25px 25px;
+  position: relative;
 }
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-header{
-    padding-top: 44px;
-    padding-bottom: 44px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 104px;
 }
 
 #name{
-    text-align: center;
-    padding-bottom: 14px;
-    font-size: 32px;
-    line-height: 40px;
-  }
+  position: relative;
+  font-size: 30px;
+}
 
-nav{
+#hamburger{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 17px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+}
+
+.ham_line{
+  width: 27.5px;
+  height: 1px;
+  margin: 4px 0;
+  transition: 0.3s ease;
+  background-color: #000000;
+}
+
+#nav_list{
+  display: none;
+  position: absolute;
+  font-size: 24px;
+}
+
+#nav_list.active{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  top: 89px;
+  right: 0;
+  width: 100%;
+  height: 90vh;
+  gap: 30px;
+  position: fixed;
+}
+
+#hamburger.active .ham_line:nth-child(1){
+  transform: translate(0px, 5px) rotate(45deg);
+}
+
+#hamburger.active .ham_line:nth-child(2){
+  transform: translate(0px, -5px) rotate(-45deg);
+}
+
+body.active{
+  overflow: hidden;
 }
 
 #insta{
-  width: 17px;
-  height: 17px;
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 .albums{
@@ -117,12 +154,6 @@ button{
   height: 25px;
 }
 
-footer{
-  padding: 25px;
-  background-color: #f0f0f0;
-  height: 75px;
-}
-
 @media (min-width: 768px){
   header{
       flex-direction: row;
@@ -186,8 +217,5 @@ footer{
   #contactTxt{
     padding-right: 60px;
     font-size: 75px;
-  }
-  footer{
-      padding: 30px;
   }
 }
