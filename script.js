@@ -33,20 +33,52 @@ function loadAlbum(alb){
         // create HTML to display images by iterating through images of selected array
         let html = '<div class = "imgView">';
         images.forEach(image => {
-            html += `<img src="${image}" alt="album image">`;
+            html += `<img src="${image}" alt="album image" class = "selectedImg">`;
         });
 
         html += '</div>';
 
         // set created HTML
         albContent.innerHTML = html;
+
+        // popup and navigate
+        const selectedImg = document.querySelectorAll('.selectedImg');
+        const popup = document.querySelector('.popup');
+        const popupImg = document.getElementById('popupImg');
+        const closePopup = document.querySelector('.popup span');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let currentIndex = 0;
+
+        selectedImg.forEach(img => {
+            img.addEventListener('click', function() {
+                popup.style.display = 'block';
+                popupImg.src = this.src;
+            });
+        });
+
+        closePopup.addEventListener('click', function(){
+            popup.style.display = 'none';
+        });
+
+        prevBtn.addEventListener('click', function(){
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            popupImg.src = images[currentIndex];
+        });
+
+        nextBtn.addEventListener('click', function(){
+            currentIndex = (currentIndex + 1) % images.length;
+            popupImg.src = images[currentIndex];
+        });
+
     }else{
-        albContent.innerHTML = '<p>Images not found.</p>'
+        albContent.innerHTML = '<p>Images not found.</p>';
     }
 }
 
 document.getElementById('contactForm').addEventListener('submit', function(event){
     event.preventDefault();
 
-    alert('Thank you for your message!')
+    alert('Thank you for your message!');
 });
