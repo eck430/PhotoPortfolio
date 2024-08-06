@@ -48,5 +48,5 @@ function loadAlbum(alb){
 document.getElementById('contactForm').addEventListener('submit', function(event){
     event.preventDefault();
 
-    alert('Thank you for your message! Please note that this is a demonstration project, and your message has not been sent.')
+    alert('Thank you for your message!')
 });
