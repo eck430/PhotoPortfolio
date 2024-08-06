@@ -393,7 +393,7 @@ hr{
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   nav{
     margin: 5px 30px;
   }
@@ -433,5 +433,24 @@ hr{
     width: 36vw;
     margin-left: 7vw;
     font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home_img{
+    width: 30vw;
+    height: 80vh;
+  }
+
+  .imgView img{
+    width: 23vw;
+    height: 64vh;
+  }
+
+  .popup img{
+    top: 4.23vw;
+    left: 33vw;
+    width: 34vw;
+    height: 85vh;
   }
 }
